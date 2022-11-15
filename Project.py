@@ -2,7 +2,7 @@ name = input("Hi, what is your name?")
 
 # Mathaias was here
 # LOLE
-# Click Commit
+# Click Commit and Push untuk ohm Mathew
 
 if name == "Mathew":
   print("hello mathaias johnson the third")
