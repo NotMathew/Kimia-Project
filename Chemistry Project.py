@@ -19,22 +19,7 @@ input1 = input()
 #Correct it if it's wrong - Wilbert
 if input1 == ("1"):
     print("That is an ionic bond.")
-else:
-    print("Saya tidak tahu")
-    sleep(3)
-    print("I'll help you")
-    sleep(2)
-    print("5")
-    sleep(1)
-    print("4")
-    sleep(1)
-    print("3")
-    sleep(1)
-    print("2")
-    sleep(1)
-    print("1")
-    sleep(1)
-    print("0")
+
 
 
 
@@ -46,8 +31,8 @@ else:
 
 #Correct it if it's wrong - Wilbert
 
-M = ["Li","Na","K","Rb","Cs","Fr","Be","Mg","Ca","Sr","Ba","Ra","B","Al","Ga","In","Tl","Si","Ge","Sn","Pb","As","Sb","Bi","Te","Po",",At","Cu","Ag","Au","Uuu","Zn","Cd"]
-M = ["Hg","Uub","Sc","Y","La","Ac","Ti","Zr","Hf","Rf","V","Nb","Ta","Db","Cr","Mo","W","Sg","Mn","Tc","Re","Bh","Fe","Ru","Os","Hs","Co","Rh","Ir","Mt","Ni","Pd","Pt","Ds"]
+M = ["Li","Na","K","Rb","Cs","Fr","Be","Mg","Ca","Sr","Ba","Ra","B","Al","Ga","In","Tl","Si","Ge","Sn","Pb","As","Sb","Bi","Te","Po",",At","Cu","Ag","Au","Uuu","Zn","Cd"
+     "Hg","Uub","Sc","Y","La","Ac","Ti","Zr","Hf","Rf","V","Nb","Ta","Db","Cr","Mo","W","Sg","Mn","Tc","Re","Bh","Fe","Ru","Os","Hs","Co","Rh","Ir","Mt","Ni","Pd","Pt","Ds"]
 Non_M = ["H","C","N","P","O","S","Se","F","Cl","Br","I","He","Ne","Ar","Kr","Xe","Rn"]
 # Net, di line 1 dan 2 itu atom apaan?
 # Metal dan Non-Metal?
