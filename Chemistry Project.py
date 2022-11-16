@@ -57,10 +57,36 @@ while running == True:
             print(Col_IIA)
         elif user_input == ("3"):
             print(Col_IIIA)
-
-
-
-
+        elif user_input == ("4"):
+            print(Col_VIA)
+        elif user_input == ("5"):
+            print(Col_VA)
+        elif user_input == ("6"):
+            print(Col_VIA)
+        elif user_input == ("7"):
+            print(Col_VIIA)
+        elif user_input == ("8"):
+            print(Col_VIIIA)
+        elif user_input == ("9"):
+            print(Col_IB)
+        elif user_input == ("10"):
+            print(Col_IIB)
+        elif user_input == ("11"):
+            print(Col_IIIB)
+        elif user_input == ("12"):
+            print(Col_IVB)
+        elif user_input == ("13"):
+            print(Col_VB)
+        elif user_input == ("14"):
+            print(Col_VIB)
+        elif user_input == ("15"):
+            print(Col_VIIB)
+        elif user_input == ("16"):
+            print(Col_VIIIB8)
+        elif user_input == ("17"):
+            print(Col_VIIIB9)
+        elif user_input == ("18"):
+            print(Col_VIIIB10)
 
 
 
