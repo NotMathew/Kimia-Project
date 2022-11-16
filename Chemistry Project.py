@@ -1,5 +1,5 @@
 print("By Nathan, Mathew, and Willbert")
-print("1. Gol_IA                            9. Gol_IB")
+print("1. Gol_IA                            9.  Gol_IB")
 print("2. Gol_IIA                           10. Gol_IIB")
 print("3. Gol_IIIB                          11. Gol_IIIA")
 print("4. Gol_IVB                           12. Gol_IVA")
