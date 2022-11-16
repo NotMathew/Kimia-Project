@@ -9,7 +9,7 @@ print("7. Gol_VIIB                          15. Gol_VIIA")
 print("8. Gol_VIIIB                         16. Gol_VIIIA")
 print("Please select what golongan do you want to explore:")
 input1 = input()
-
+input_list = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"]
 
 
 M = ["Li","Na","K","Rb","Cs","Fr","Be","Mg","Ca","Sr","Ba","Ra","B","Al","Ga","In","Tl","Si","Ge","Sn","Pb","As","Sb","Bi","Te","Po",",At"]
