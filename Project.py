@@ -35,4 +35,3 @@ else:
 # willbert was here
 
 gol1 = ["Hidrogen", ""]
-
