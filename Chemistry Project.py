@@ -53,7 +53,6 @@ Col_VIIIB8 = ["Fe","Ru","Os","Hs"]
 Col_VIIIB9 = ["Co","Rh","Ir","Mt"]
 Col_VIIIB10 = ["Ni","Pd","Pt","Ds"]
 
-from time import sleep
 #print("Welcome to the limited periodic table bonding dictionary")
 # sleep(2)
 #print("Insert 2 atoms from column IA-VIIIB10")
