@@ -1,3 +1,4 @@
+# A Project by Nathan, Mathew, Wilbert
 # Imports
 from time import sleep
 import random
