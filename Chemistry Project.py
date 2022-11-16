@@ -3,13 +3,13 @@
 from time import sleep
 import random
 
-#Element Dictionary
+# Element Dictionary
 M = ["Li","Na","K","Rb","Cs","Fr","Be","Mg","Ca","Sr","Ba","Ra","B","Al","Ga","In","Tl","Si","Ge","Sn","Pb","As","Sb","Bi","Te","Po",",At","Cu","Ag","Au","Uuu","Zn","Cd"
      "Hg","Uub","Sc","Y","La","Ac","Ti","Zr","Hf","Rf","V","Nb","Ta","Db","Cr","Mo","W","Sg","Mn","Tc","Re","Bh","Fe","Ru","Os","Hs","Co","Rh","Ir","Mt","Ni","Pd","Pt","Ds"]
 Non_M = ["H","C","N","P","O","S","Se","F","Cl","Br","I","He","Ne","Ar","Kr","Xe","Rn"]
 # M = Metal
 # Non_M = Non-Metal
-#Col = Column
+# Col = Column
 Col_IA = ["H","li","Na","K","Rb","Cs","Fr"]
 Col_IIA = ["Be","Mg","Ca","Sr","Ba","Ra"]
 Col_IIIA = ["B","Al","Ga","In","Tl"]
@@ -88,43 +88,20 @@ while running == True:
         elif user_input == ("18"):
             print(Col_VIIIB10)
 
-
-
-
-#Correct it if it's wrong - Wilbert
-
-M = ["Li","Na","K","Rb","Cs","Fr","Be","Mg","Ca","Sr","Ba","Ra","B","Al","Ga","In","Tl","Si","Ge","Sn","Pb","As","Sb","Bi","Te","Po",",At","Cu","Ag","Au","Uuu","Zn","Cd"
-     "Hg","Uub","Sc","Y","La","Ac","Ti","Zr","Hf","Rf","V","Nb","Ta","Db","Cr","Mo","W","Sg","Mn","Tc","Re","Bh","Fe","Ru","Os","Hs","Co","Rh","Ir","Mt","Ni","Pd","Pt","Ds"]
-Non_M = ["H","C","N","P","O","S","Se","F","Cl","Br","I","He","Ne","Ar","Kr","Xe","Rn"]
-# M = Metal
-# Non_M = Non-Metal
-Col_IA = ["H","li","Na","K","Rb","Cs","Fr"]
-Col_IIA = ["Be","Mg","Ca","Sr","Ba","Ra"]
-Col_IIIA = ["B","Al","Ga","In","Tl"]
-Col_IVA = ["C","Si","Ge","Sn","Pb"]
-Col_VA = ["N","P","As","Sb","Bi"]
-Col_VIA = ["O","S","Se","Te","Po"]
-Col_VIIA = ["F","Cl","Br","I","At"]
-Col_VIIIA = ["He","Ne","Ar","Kr","Xe","Rn"]
-Col_IB = ["Cu","Ag","Au","Uuu"]
-Col_IIB = ["Zn","Cd","Hg","Uub"]
-Col_IIIB = ["Sc","Y","La","Ac"]
-Col_IVB = ["Ti","Zr","Hf","Rf"]
-Col_VB = ["V","Nb","Ta","Db"]
-Col_VIB = ["Cr","Mo","W","Sg"]
-Col_VIIB = ["Mn","Tc","Re","Bh"]
-Col_VIIIB8 = ["Fe","Ru","Os","Hs"]
-Col_VIIIB9 = ["Co","Rh","Ir","Mt"]
-Col_VIIIB10 = ["Ni","Pd","Pt","Ds"]
-
-#print("Welcome to the limited periodic table bonding dictionary")
-# sleep(2)
-#print("Insert 2 atoms from column IA-VIIIB10")
-# sleep(2)
-#atom_1 = input("1st Atom = ")
-#atom_2 = input("2nd Atom = ")
-
-#if atom_1 in M and atom_2 in Non_M:
-#    print("This is an Ion Bond")
-#else:
-#    print("Invalid atom")
+    elif user_input == "dictionary":
+        print("Welcome to the limited periodic table bonding simulation")
+        sleep(1)
+        print("Insert 2 atoms from column IA - VIIIA or IB - VIIIB10")
+        sleep(1)
+        atom_1 = input("1st Atom = ")
+        atom_2 = input("2nd Atom = ")
+        if atom_1 in M and atom_2 in Non_M or atom_1 in Non_M and atom_2 in M:
+            print("This is an Ion Bond")
+            sleep(1)
+            print("Why you may ask?")
+        elif atom_1 in Non_M and atom_2 in Non_M:
+            print("This is a Covalent Bond")
+        elif atom_1 in M and atom_2 in M:
+            print("This is a Metalic Bond")
+        else:
+            print("Invalid atom or input")
