@@ -1,4 +1,13 @@
 from time import sleep
+print("       /|")
+print("      / |")
+print("     /  |")
+print("  2 /   | AKAR 3")
+print("   /    |")
+print("  /     |")
+print(" /______|")
+print("    1     ")
+
 name = input("Hi, what is your name?").lower()
 if name == "mathew":
   print("hello mathaias johnson the third")
