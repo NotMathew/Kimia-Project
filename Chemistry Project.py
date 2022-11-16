@@ -21,12 +21,10 @@ if input1 == ("1"):
     print("That is an ionic bond.")
 
 
-
-
-    counter = 0
-    while counter < 2:
-      print("Loading...")
-      counter =+ 1
+counter = 10
+while counter > 20:
+    print("Loading...")
+    counter = + 1
 
 
 #Correct it if it's wrong - Wilbert
@@ -34,9 +32,8 @@ if input1 == ("1"):
 M = ["Li","Na","K","Rb","Cs","Fr","Be","Mg","Ca","Sr","Ba","Ra","B","Al","Ga","In","Tl","Si","Ge","Sn","Pb","As","Sb","Bi","Te","Po",",At","Cu","Ag","Au","Uuu","Zn","Cd"
      "Hg","Uub","Sc","Y","La","Ac","Ti","Zr","Hf","Rf","V","Nb","Ta","Db","Cr","Mo","W","Sg","Mn","Tc","Re","Bh","Fe","Ru","Os","Hs","Co","Rh","Ir","Mt","Ni","Pd","Pt","Ds"]
 Non_M = ["H","C","N","P","O","S","Se","F","Cl","Br","I","He","Ne","Ar","Kr","Xe","Rn"]
-# Net, di line 1 dan 2 itu atom apaan?
-# Metal dan Non-Metal?
-
+# M = Metal
+# Non_M = Non-Metal
 Col_IA = ["H","li","Na","K","Rb","Cs","Fr"]
 Col_IIA = ["Be","Mg","Ca","Sr","Ba","Ra"]
 Col_IIIA = ["B","Al","Ga","In","Tl"]
