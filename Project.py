@@ -28,7 +28,7 @@ elif name == "nathan":
     exit()
 else:
   print("Hi " + name +", Welcome to Python!")
-
+# willbert was here
 
 gol1 = ["Hidrogen", ""]
 
