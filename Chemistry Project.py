@@ -1,5 +1,6 @@
 M = ["Li","Na","K","Rb","Cs","Fr","Be","Mg","Ca","Sr","Ba","Ra","B","Al","Ga","In","Tl","Si","Ge","Sn","Pb","As","Sb","Bi","Te","Po",",At"]
 Non_M = ["H","C","N","P","O","S","Se","F","Cl","Br","I","He","Ne","Ar","Kr","Xe","Rn"]
+# Net, di line 1 dan 2 itu atom apaan?
 
 Col_IA = ["H","li","Na","K","Rb","Cs","Fr"]
 Col_IIA = ["Be","Mg","Ca","Sr","Ba","Ra"]
