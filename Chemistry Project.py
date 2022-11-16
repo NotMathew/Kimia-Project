@@ -5,6 +5,7 @@ import random
 
 # Main
 print("By Nathan, Mathew, and Wilbert")
+print("")
 print("1. Gol_IA                            9.  Gol_IB")
 print("2. Gol_IIA                           10. Gol_IIB")
 print("3. Gol_IIIA                          11. Gol_IIIB")
