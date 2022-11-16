@@ -19,11 +19,15 @@ elif name == "nathan":
     print("0_0")
     sleep(2)
     print("BYe Bye, nice try. you lied to me")
-    sleep(20)
+    sleep(10)
     print("You still here?")
     sleep(2)
     print("Bye for real")
     sleep(2)
+    counter = 0
+    while counter < 2:
+      print("HAHAHHAHAHAHHAHAHAHAHAHHA")
+      counter =+ 1
     print("~Nathan")
     exit()
 else:
