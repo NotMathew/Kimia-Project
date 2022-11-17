@@ -91,6 +91,8 @@ while running == True:
                 print(Col_VIIIB9)
             elif user_input == ("18"):
                 print(Col_VIIIB10)
+            elif user_input == "home":
+                break
 
     elif user_input == "simulation":
         simulation_running = True
@@ -103,13 +105,27 @@ while running == True:
             sleep(1)
             atom_1 = input("1st Atom = ")
             atom_2 = input("2nd Atom = ")
-            if atom_1 in M and atom_2 in Non_M or atom_1 in Non_M and atom_2 in M:
+            if atom_1 or atom_2 == "home":
+                break
+            elif atom_1 in M and atom_2 in Non_M or atom_1 in Non_M and atom_2 in M:
                 print("This is an Ion Bond")
                 sleep(1)
-                print("Why you may ask?")
+                print("It happens between a Metalic element and a Non Metalic element")
             elif atom_1 in Non_M and atom_2 in Non_M:
                 print("This is a Covalent Bond")
+                print("It happens between two Non Metalic elements")
             elif atom_1 in M and atom_2 in M:
                 print("This is a Metalic Bond")
+                print("It happens between two Metalic elements")
             else:
                  print("Invalid atom or input")
+
+    elif user_input == "exit":
+        # exiting the project
+        print("Thank you for using this limited dictionary and simulation")
+        sleep(2)
+        print("We hope you enjoyed our project")
+        sleep(1)
+        print("~Nathan, Mathew and Wilbert")
+        exit()
+
