@@ -9,7 +9,6 @@ def slow_typing(sentence):
         sleep(.25)
 
 
-# Whats up nathon
 # Element Dictionary
 M = ["Li","Na","K","Rb","Cs","Fr","Be","Mg","Ca","Sr","Ba","Ra","B","Al","Ga","In","Tl","Si","Ge","Sn","Pb","As","Sb","Bi","Te","Po",",At","Cu","Ag","Au","Uuu","Zn","Cd"
      "Hg","Uub","Sc","Y","La","Ac","Ti","Zr","Hf","Rf","V","Nb","Ta","Db","Cr","Mo","W","Sg","Mn","Tc","Re","Bh","Fe","Ru","Os","Hs","Co","Rh","Ir","Mt","Ni","Pd","Pt","Ds"]
@@ -42,7 +41,8 @@ sleep(1)
 print("Hello and welcome to the simple element Dictionary or Simulation")
 sleep(1)
 while running == True:
-    user_input = input("Dictionary or Simulation?").lower()
+    print("Dictionary or Simulation?")
+    user_input = input(": ").lower()
     if user_input == "dictionary":
         dictionary_running = True
 
