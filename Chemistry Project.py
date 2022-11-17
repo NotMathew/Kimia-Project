@@ -131,9 +131,9 @@ while running == True:
     elif user_input == "exit":
         # exiting the project
         print("Thank you for using this limited dictionary and simulation")
-        sleep(2)
+        sleep(1)
         print("We hope you enjoyed our project")
         sleep(1)
-        print("~Nathan, Mathew and Wilbert")
+        slow_typing("~Nathan, Mathew and Wilbert")
         exit()
 
