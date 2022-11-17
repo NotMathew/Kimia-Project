@@ -11,14 +11,17 @@ def slow_typing(sentence):
 
 # Whats up nathon
 # Element Dictionary
-M = ["Li","Na","K","Rb","Cs","Fr","Be","Mg","Ca","Sr","Ba","Ra","B","Al","Ga","In","Tl","Si","Ge","Sn","Pb","As","Sb","Bi","Te","Po",",At","Cu","Ag","Au","Uuu","Zn","Cd"
-     "Hg","Uub","Sc","Y","La","Ac","Ti","Zr","Hf","Rf","V","Nb","Ta","Db","Cr","Mo","W","Sg","Mn","Tc","Re","Bh","Fe","Ru","Os","Hs","Co","Rh","Ir","Mt","Ni","Pd","Pt","Ds"]
+M = ["Li","Na","K","Rb","Cs","Fr","Be","Mg","Ca","Sr","Ba","Ra","B","Al","Ga","In","Tl","Uut","Si","Ge","Sn","Pb","As","Sb","Bi","Te","Po",",At","Cu","Ag","Au","Zn","Cd"
+     "Hg","Cn","Sc","Y","La","Ac","Ti","Zr","Hf","Rf","V","Nb","Ta","Db","Cr","Mo","W","Sg","Mn","Tc","Re","Bh","Fe","Ru","Os","Hs","Co","Rh","Ir","Mt","Ni","Pd","Pt","Ds"]
 Non_M = ["H","C","N","P","O","S","Se","F","Cl","Br","I","He","Ne","Ar","Kr","Xe","Rn"]
-Electronegitivity = {"H":2.1,"Li":1.0,"Be":1.5,"B":2.0,"C":2.5,"N": 3.0,"O":3.5,"F":4.0,"Na":0.9,"Mg":1.2,"Al":1.5, "Si":1.8,"P":2.1, "S":2.5, "Cl":3.0,"K":0.8,"Ca":1.0,"Sc":1.3,"Ti":1.5,"V":1.6,"Cr":1.6,"Mn":1.5,"Fe":1.8,"Co":1.8,"Ni":1.8,"Cu":1.9,"Zn":1.6,
-                     "Ga":1.6,"Ge":1.8,"As":2.0,"Se":2.4,"Se":2.4,"Br":2.8,"Kr":3.0,"Rb":0.8,"Sr":1.0,"Y":1.2,"Zr":1.4,"Nb":1.6,"Mo":1.8,"Tc":1.9,"Ru":2.2,
-                     "Rh":2.2,"Pd":2.2,"Ag":1.9,"Cd":1.7,"In":1.7,"Sn":1.8,"Sb":1.9,"Te":2.1,"I":2.5,"Xe":2.6,"Cs":0.7,"Ba":0.9,"La":1.1,"Hf":1.3,"Ta":1.5,"W":1.7,"Re":1.9,"Os":2.2,"Ir":2.2,"Pt":2.2,"Au":2.4,"Hg":1.9,"Te":1.8,"Td":1.8,"Be":1.9,"Po":2.0,
-                     "At":2.2,"Rn":2.4,"Fr":0.7,"Ra":0.7,"Ac":1.1,"Ce":1.1,"Pr":1.1,"Nd":1.1,"Pm":1.1,"Sm":1.1,"Eu":1.1,"Gd":1.1,"Tb":1.1,"Dy":1.1,"Ho":1.1,"Er":1.1,"Tm":1.1,
-                     "Yb":1.1,"Lu":1.2,"Th":1.3,""}
+electronegitivity = {"H":"2.1","Li":"1.0","Be":'1.5',"B":'2.0',"C":'2.5',"N": '3.0',"O":'3.5',"F":'4.0',"Na":'0.9',"Mg":'1.2',"Al":'1.5',
+                     "Si":'1.8',"P":'2.1', "S":'2.5', "Cl":'3.0',"K":'0.8',"Ca":'1.0',"Sc":'1.3',"Ti":'1.5',"V":'1.6',"Cr":'1.6',"Mn":'1.5',"Fe":'1.8',
+                     "Co":'1.8',"Ni":'1.8',"Cu":'1.9',"Zn":'1.6',"Ga":'1.6',"Ge":'1.8',"As":'2.0',"Se":'2.4',"Br":'2.8',"Kr":'3.0',
+                     "Rb":'0.8',"Sr":'1.0',"Y":'1.2',"Zr":'1.4',"Nb":'1.6',"Mo":'1.8',"Tc":'1.9',"Ru":'2.2',"Rh":'2.2',
+                     "Pd":'2.2',"Ag":'1.9',"Cd":'1.7',"In":'1.7',"Sn":'1.8',"Sb":'1.9',"Te":'2.1',"I":'2.5',"Xe":'2.6',
+                     "Cs":'0.7',"Ba":'0.9',"La":'1.1',"Hf":'1.3',"Ta":'1.5',"W":'1.7',"Re":'1.9',"Os":'2.2',"Ir":'2.2',
+                     "Pt":'2.2',"Au":'2.4',"Hg":'1.9',"Tl":'1.8',"Pb":'1.8',
+                     "Bi":'1.9',"Po":'2.0',"At":'2.2',"Rn":'2.4',"Fr":'0.7',"Ra":'0.7',"Ac":'1.1'}
 # Electronegativity is in buku paket kimia page 73
 # M = Metal
 # Non_M = Non-Metal
@@ -31,16 +34,16 @@ Col_VA = ["N","P","As","Sb","Bi"]
 Col_VIA = ["O","S","Se","Te","Po"]
 Col_VIIA = ["F","Cl","Br","I","At"]
 Col_VIIIA = ["He","Ne","Ar","Kr","Xe","Rn"]
-Col_IB = ["Cu","Ag","Au","Uuu"]
-Col_IIB = ["Zn","Cd","Hg","Uub"]
+Col_IB = ["Cu","Ag","Au"]
+Col_IIB = ["Zn","Cd","Hg","Cn"]
 Col_IIIB = ["Sc","Y","La","Ac"]
 Col_IVB = ["Ti","Zr","Hf","Rf"]
 Col_VB = ["V","Nb","Ta","Db"]
 Col_VIB = ["Cr","Mo","W","Sg"]
 Col_VIIB = ["Mn","Tc","Re","Bh"]
 Col_VIIIB8 = ["Fe","Ru","Os","Hs"]
-Col_VIIIB9 = ["Co","Rh","Ir","Mt"]
-Col_VIIIB10 = ["Ni","Pd","Pt","Ds"]
+Col_VIIIB9 = ["Co","Rh","Ir"]
+Col_VIIIB10 = ["Ni","Pd","Pt"]
 
 running = True
 print("A Project By Nathan, Mathew, Wilbert")
@@ -109,41 +112,46 @@ while running == True:
 
     elif user_input == "simulation":
         simulation_running = True
+        print("Welcome to the limited periodic table bonding simulation")
         while simulation_running == True:
-
             # Simulation
-            print("Welcome to the limited periodic table bonding simulation")
             sleep(1)
             print("Insert 2 atoms from column IA - VIIIA or IB - VIIIB10")
             sleep(1)
             atom_1 = input("1st Atom = ")
             atom_2 = input("2nd Atom = ")
-            if atom_1 in M and atom_2 in Non_M or atom_1 in Non_M and atom_2 in M:
+            electro_atom_1 = float(electronegitivity[atom_1])
+            electro_atom_2 = float(electronegitivity[atom_2])
+            if atom_1 in M and atom_2 in Non_M and (electro_atom_1 - electro_atom_2 >= 1.7 or electro_atom_2 - electro_atom_1 >= 1.7) or atom_1 in Non_M and atom_2 in M and (electro_atom_1 - electro_atom_2 >= 1.7 or electro_atom_2 - electro_atom_1 >= 1.7):
                 print("This is an Ion Bond")
                 sleep(1)
                 print("It occurs between a Metalic atom and a Non Metalic atom")
                 sleep(1)
-                print("You typed " + atom_1 + "and " + atom_2)
+                print("You typed " + atom_1 + " and " + atom_2)
                 sleep(1)
                 print("This bond involves giving and taking between the electrons of those atoms")
                 sleep(1)
                 print("The difference in electronegativity between the two atoms are more or equal to 1.7")
-            elif atom_1 in Non_M and atom_2 in Non_M:
+                sleep(1)
+                print(atom_1 +" = " + electronegitivity[atom_1] + ", " + atom_2 + " = " + electronegitivity[atom_2])
+            elif atom_1 in Non_M and atom_2 in Non_M and (electro_atom_1 - electro_atom_2 < 1.7 or electro_atom_2 - electro_atom_1 < 1.7):
                 print("This is a Covalent Bond")
                 sleep(1)
                 print("It occurs between two Non Metalic atoms")
                 sleep(1)
-                print("You typed " + atom_1 + "and " + atom_2)
+                print("You typed " + atom_1 + " and " + atom_2)
                 sleep(1)
                 print("This bond involves the sharing of electrons between the atoms")
                 sleep(1)
                 print("The difference in electronegativity between the two atoms are less than 1.7")
+                sleep(1)
+                print(atom_1 +" = " + electronegitivity[atom_1] + ", " + atom_2 + " = " + electronegitivity[atom_2])
             elif atom_1 in M and atom_2 in M:
                 print("This is a Metalic Bond")
                 sleep(1)
                 print("It occurs between two Metalic atoms")
                 sleep(1)
-                print("You typed " + atom_1 + "and " + atom_2)
+                print("You typed " + atom_1 + " and " + atom_2)
                 sleep(1)
                 print("This bond involves the sharing of electrons between many metalic atoms")
                 sleep(1)
