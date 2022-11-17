@@ -60,7 +60,7 @@ while running == True:
         print("                                     18. Col_VIIIB10")
         while dictionary_running == True:
             print("Type a number to explore the dictionary of element columns")
-            user_input = input()
+            user_input = input(": ")
             if user_input == ("1"):
                 print(Col_IA)
             elif user_input == ("2"):
