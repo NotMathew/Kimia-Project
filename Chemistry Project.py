@@ -3,6 +3,12 @@
 from time import sleep
 import random
 
+def slow_typing(sentence):
+    for x in sentence:
+        print(x, end="")
+        sleep(.25)
+
+
 # Whats up nathon
 # Element Dictionary
 M = ["Li","Na","K","Rb","Cs","Fr","Be","Mg","Ca","Sr","Ba","Ra","B","Al","Ga","In","Tl","Si","Ge","Sn","Pb","As","Sb","Bi","Te","Po",",At","Cu","Ag","Au","Uuu","Zn","Cd"
@@ -110,13 +116,15 @@ while running == True:
             elif atom_1 in M and atom_2 in Non_M or atom_1 in Non_M and atom_2 in M:
                 print("This is an Ion Bond")
                 sleep(1)
-                print("It happens between a Metalic element and a Non Metalic element")
+                print("It happens between a Metalic atom and a Non Metalic atom")
+                sleep(1)
+                print("This bond involves giving and taking between the electrons of those atoms")
             elif atom_1 in Non_M and atom_2 in Non_M:
                 print("This is a Covalent Bond")
-                print("It happens between two Non Metalic elements")
+                print("It happens between two Non Metalic atoms")
             elif atom_1 in M and atom_2 in M:
                 print("This is a Metalic Bond")
-                print("It happens between two Metalic elements")
+                print("It happens between two Metalic atoms")
             else:
                  print("Invalid atom or input")
 
