@@ -32,11 +32,13 @@ Col_VIIIB10 = ["Ni","Pd","Pt","Ds"]
 running = True
 print("A Project By Nathan, Mathew, Wilbert")
 sleep(1)
-print("Hello and welcome to the simple element simulation and dictionary")
+print("Hello and welcome to the simple element Dictionary or Simulation")
 sleep(1)
 while running == True:
     user_input = input("Dictionary or Simulation?").lower()
     if user_input == "dictionary":
+        dictionary_running = True
+
         # Dictionary
         # Write Col instead of Gol, we want it in English
         print("1. Col_IA                            9.  Col_IB")
@@ -49,59 +51,64 @@ while running == True:
         print("8. Col_VIIIA                         16. Col_VIIIB8")
         print("                                     17. Col_VIIIB9")
         print("                                     18. Col_VIIIB10")
-        print("Please type the number to start exploring the world of chemistry")
-        user_input = input()
-        if user_input == ("1"):
-            print(Col_IA)
-        elif user_input == ("2"):
-            print(Col_IIA)
-        elif user_input == ("3"):
-            print(Col_IIIA)
-        elif user_input == ("4"):
-            print(Col_VIA)
-        elif user_input == ("5"):
-            print(Col_VA)
-        elif user_input == ("6"):
-            print(Col_VIA)
-        elif user_input == ("7"):
-            print(Col_VIIA)
-        elif user_input == ("8"):
-            print(Col_VIIIA)
-        elif user_input == ("9"):
-            print(Col_IB)
-        elif user_input == ("10"):
-            print(Col_IIB)
-        elif user_input == ("11"):
-            print(Col_IIIB)
-        elif user_input == ("12"):
-            print(Col_IVB)
-        elif user_input == ("13"):
-            print(Col_VB)
-        elif user_input == ("14"):
-            print(Col_VIB)
-        elif user_input == ("15"):
-            print(Col_VIIB)
-        elif user_input == ("16"):
-            print(Col_VIIIB8)
-        elif user_input == ("17"):
-            print(Col_VIIIB9)
-        elif user_input == ("18"):
-            print(Col_VIIIB10)
+        while dictionary_running == True:
+            print("Type a number to explore the dictionary of element columns")
+            user_input = input()
+            if user_input == ("1"):
+                print(Col_IA)
+            elif user_input == ("2"):
+                print(Col_IIA)
+            elif user_input == ("3"):
+                print(Col_IIIA)
+            elif user_input == ("4"):
+                print(Col_VIA)
+            elif user_input == ("5"):
+                print(Col_VA)
+            elif user_input == ("6"):
+                print(Col_VIA)
+            elif user_input == ("7"):
+                print(Col_VIIA)
+            elif user_input == ("8"):
+                print(Col_VIIIA)
+            elif user_input == ("9"):
+                print(Col_IB)
+            elif user_input == ("10"):
+                print(Col_IIB)
+            elif user_input == ("11"):
+                print(Col_IIIB)
+            elif user_input == ("12"):
+                print(Col_IVB)
+            elif user_input == ("13"):
+                print(Col_VB)
+            elif user_input == ("14"):
+                print(Col_VIB)
+            elif user_input == ("15"):
+                print(Col_VIIB)
+            elif user_input == ("16"):
+                print(Col_VIIIB8)
+            elif user_input == ("17"):
+                print(Col_VIIIB9)
+            elif user_input == ("18"):
+                print(Col_VIIIB10)
 
-    elif user_input == "dictionary":
-        print("Welcome to the limited periodic table bonding simulation")
-        sleep(1)
-        print("Insert 2 atoms from column IA - VIIIA or IB - VIIIB10")
-        sleep(1)
-        atom_1 = input("1st Atom = ")
-        atom_2 = input("2nd Atom = ")
-        if atom_1 in M and atom_2 in Non_M or atom_1 in Non_M and atom_2 in M:
-            print("This is an Ion Bond")
+    elif user_input == "simulation":
+        simulation_running = True
+        while simulation_running == True:
+
+            # Simulation
+            print("Welcome to the limited periodic table bonding simulation")
             sleep(1)
-            print("Why you may ask?")
-        elif atom_1 in Non_M and atom_2 in Non_M:
-            print("This is a Covalent Bond")
-        elif atom_1 in M and atom_2 in M:
-            print("This is a Metalic Bond")
-        else:
-            print("Invalid atom or input")
+            print("Insert 2 atoms from column IA - VIIIA or IB - VIIIB10")
+            sleep(1)
+            atom_1 = input("1st Atom = ")
+            atom_2 = input("2nd Atom = ")
+            if atom_1 in M and atom_2 in Non_M or atom_1 in Non_M and atom_2 in M:
+                print("This is an Ion Bond")
+                sleep(1)
+                print("Why you may ask?")
+            elif atom_1 in Non_M and atom_2 in Non_M:
+                print("This is a Covalent Bond")
+            elif atom_1 in M and atom_2 in M:
+                print("This is a Metalic Bond")
+            else:
+                 print("Invalid atom or input")
