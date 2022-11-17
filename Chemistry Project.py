@@ -157,7 +157,7 @@ while running == True:
                 sleep(1)
                 print("The metal is held together by strong forces of attraction between delocalized electrons and positive ions")
             else:
-                 print("Invalid atom or input")
+                 print("Invalid atom, input or electronegativity conditions don't meet")
 
     elif user_input == "exit":
         # exiting the project
