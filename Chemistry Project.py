@@ -109,6 +109,8 @@ while running == True:
                 print(Col_VIIIB10)
             elif user_input == "home":
                 break
+            else:
+                print("Invalid Input")
 
     elif user_input == "simulation":
         simulation_running = True
@@ -167,4 +169,8 @@ while running == True:
         sleep(1)
         slow_typing("~Nathan, Mathew and Wilbert")
         exit()
+    else:
+        print("")
+        print("Invalid Input...")
+        sleep(1)
 

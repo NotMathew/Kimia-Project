@@ -95,7 +95,7 @@
  [],
  False,
  False,
- 1669099068,
+ 1669100289,
  [('run.exe',
    'C:\\Users\\Carmenita\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
    'EXECUTABLE')])
