@@ -169,6 +169,8 @@ while running == True:
         sleep(1)
         slow_typing("~Nathan, Mathew and Wilbert")
         exit()
+    elif user_input == ("version"):
+            print("0.1V")
     else:
         print("")
         print("Invalid Input...")
