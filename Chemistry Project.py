@@ -53,7 +53,7 @@ sleep(1)
 while running == True:
     print("Dictionary or Simulation?")
     user_input = input("").lower()
-    if user_input == "dictionary":
+    if user_input == "dictionary" or "dic":
         dictionary_running = True
 
         # Dictionary
@@ -70,7 +70,7 @@ while running == True:
         print("                                     18. Col_VIIIB10")
         while dictionary_running == True:
             print("Type a number to explore the dictionary of element columns")
-            user_input = input()
+            user_input = input().lower()
             if user_input == ("1"):
                 print(Col_IA)
             elif user_input == ("2"):
@@ -107,12 +107,17 @@ while running == True:
                 print(Col_VIIIB9)
             elif user_input == ("18"):
                 print(Col_VIIIB10)
-            elif user_input == "home":
+            elif user_input == "home" or "back":
                 break
             else:
                 print("Invalid Input")
 
-    elif user_input == "simulation":
+    elif user_input == "help" or "?":
+        print("")
+        print("help/? = show all commands and assistances")
+        print("help")
+
+    elif user_input == "simulation" or "sim":
         simulation_running = True
         print("Welcome to the limited periodic table bonding simulation")
         while simulation_running == True:
