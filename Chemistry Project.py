@@ -14,7 +14,7 @@ def slow_typing(sentence):
 M = ["Li","Na","K","Rb","Cs","Fr","Be","Mg","Ca","Sr","Ba","Ra","B","Al","Ga","In","Tl","Uut","Si","Ge","Sn","Pb","As","Sb","Bi","Te","Po",",At","Cu","Ag","Au","Zn","Cd"
      "Hg","Cn","Sc","Y","La","Ac","Ti","Zr","Hf","Rf","V","Nb","Ta","Db","Cr","Mo","W","Sg","Mn","Tc","Re","Bh","Fe","Ru","Os","Hs","Co","Rh","Ir","Mt","Ni","Pd","Pt","Ds"]
 Non_M = ["H","C","N","P","O","S","Se","F","Cl","Br","I","He","Ne","Ar","Kr","Xe","Rn"]
-electronegitivity = {"H":"2.1","Li":"1.0","Be":'1.5',"B":'2.0',"C":'2.5',"N": '3.0',"O":'3.5',"F":'4.0',"Na":'0.9',"Mg":'1.2',"Al":'1.5',
+electronegitivity = {"H":"2.1","He":"no data","Ne":"no data","Ar":"no data","Li":"1.0","Be":'1.5',"B":'2.0',"C":'2.5',"N": '3.0',"O":'3.5',"F":'4.0',"Na":'0.9',"Mg":'1.2',"Al":'1.5',
                      "Si":'1.8',"P":'2.1', "S":'2.5', "Cl":'3.0',"K":'0.8',"Ca":'1.0',"Sc":'1.3',"Ti":'1.5',"V":'1.6',"Cr":'1.6',"Mn":'1.5',"Fe":'1.8',
                      "Co":'1.8',"Ni":'1.8',"Cu":'1.9',"Zn":'1.6',"Ga":'1.6',"Ge":'1.8',"As":'2.0',"Se":'2.4',"Br":'2.8',"Kr":'3.0',
                      "Rb":'0.8',"Sr":'1.0',"Y":'1.2',"Zr":'1.4',"Nb":'1.6',"Mo":'1.8',"Tc":'1.9',"Ru":'2.2',"Rh":'2.2',
@@ -53,7 +53,7 @@ sleep(1)
 while running == True:
     print("Dictionary or Simulation?")
     user_input = input("").lower()
-    if user_input == "dictionary" or "dic":
+    if user_input == "dictionary":
         dictionary_running = True
 
         # Dictionary
@@ -112,12 +112,7 @@ while running == True:
             else:
                 print("Invalid Input")
 
-    elif user_input == "help" or "?":
-        print("")
-        print("help/? = show all commands and assistances")
-        print("help")
-
-    elif user_input == "simulation" or "sim":
+    elif user_input == "simulation":
         simulation_running = True
         print("Welcome to the limited periodic table bonding simulation")
         while simulation_running == True:
