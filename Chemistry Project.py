@@ -1,6 +1,7 @@
 # A Project by Nathan, Mathew, Wilbert
 # Imports
 from time import sleep
+from PIL import Image
 import random
 
 def slow_typing(sentence):
@@ -122,8 +123,11 @@ while running == True:
             sleep(1)
             atom_1 = input("1st Atom = ")
             atom_2 = input("2nd Atom = ")
-            electro_atom_1 = float(electronegitivity[atom_1])
-            electro_atom_2 = float(electronegitivity[atom_2])
+            try:
+                electro_atom_1 = float(electronegitivity[atom_1])
+                electro_atom_2 = float(electronegitivity[atom_2])
+            except:
+                print("Invalid Input")
             if atom_1 in M and atom_2 in Non_M and (electro_atom_1 - electro_atom_2 >= 1.7 or electro_atom_2 - electro_atom_1 >= 1.7) or atom_1 in Non_M and atom_2 in M and (electro_atom_1 - electro_atom_2 >= 1.7 or electro_atom_2 - electro_atom_1 >= 1.7):
                 print("This is an Ion Bond")
                 sleep(1)
@@ -158,8 +162,11 @@ while running == True:
                 print("This bond involves the sharing of electrons between many metalic atoms")
                 sleep(1)
                 print("The metal is held together by strong forces of attraction between delocalized electrons and positive ions")
+            elif atom_1 or atom_2 == "home" or "back":
+                break
             else:
-                 print("Invalid atom, input or electronegativity conditions don't meet")
+                print("Invalid atom or electronegativity conditions don't meet")
+
 
     elif user_input == "exit":
         # exiting the project
