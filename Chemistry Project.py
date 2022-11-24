@@ -16,7 +16,7 @@ def slow_typing(sentence):
 M = ["Li","Na","K","Rb","Cs","Be","Mg","Ca","Sr","Ba","B","Al","Ga","In","Tl","Si","Ge","Sn","Pb","As","Sb","Bi","Te","Po",",At","Cu","Ag","Au","Zn","Cd"
      "Hg","Cn","Sc","Y","La","Ti","Zr","Hf","V","Nb","Ta","Cr","Mo","W","Mn","Tc","Re","Fe","Ru","Os","Co","Rh","Ir","Ni","Pd","Pt"]
 Non_M = ["H","C","N","P","O","S","Se","F","Cl","Br","I","He","Ne","Ar","Kr","Xe","Rn"]
-electronegativity = {"H":"2.1","He":"no data","Ne":"no data","Ar":"no data","Li":"1.0","Be":'1.5',"B":'2.0',"C":'2.5',"N": '3.0',"O":'3.5',"F":'4.0',"Na":'0.9',"Mg":'1.2',"Al":'1.5',
+electronegativity = {"H":"2.1","He":"no data","Ne":"no data","Ar":"no data","Li":"1.0","Be":'1.5',"B":'2.0',"C":'2.5',"N":'3.0',"O":'3.5',"F":'4.0',"Na":'0.9',"Mg":'1.2',"Al":'1.5',
                      "Si":'1.8',"P":'2.1', "S":'2.5', "Cl":'3.0',"K":'0.8',"Ca":'1.0',"Sc":'1.3',"Ti":'1.5',"V":'1.6',"Cr":'1.6',"Mn":'1.5',"Fe":'1.8',
                      "Co":'1.8',"Ni":'1.8',"Cu":'1.9',"Zn":'1.6',"Ga":'1.6',"Ge":'1.8',"As":'2.0',"Se":'2.4',"Br":'2.8',"Kr":'3.0',
                      "Rb":'0.8',"Sr":'1.0',"Y":'1.2',"Zr":'1.4',"Nb":'1.6',"Mo":'1.8',"Tc":'1.9',"Ru":'2.2',"Rh":'2.2',
@@ -124,6 +124,8 @@ while running == True:
             sleep(1)
             atom_1 = input("1st Atom = ")
             atom_2 = input("2nd Atom = ")
+            if atom_1 and atom_2 == "home":
+                break
             electro_atom_1 = electronegativity[atom_1]
             electro_atom_2 = electronegativity[atom_2]
             if electro_atom_1 == "no data":
@@ -133,7 +135,7 @@ while running == True:
             else:
                 electro_atom_1 = float(electronegativity[atom_1])
                 electro_atom_2 = float(electronegativity[atom_2])
-                if atom_1 in M and atom_2 in Non_M and (electro_atom_1 - electro_atom_2 >= 1.7 or electro_atom_2 - electro_atom_1 >= 1.7) or atom_1 in Non_M and atom_2 in M and (electro_atom_1 - electro_atom_2 >= 1.7 or electro_atom_2 - electro_atom_1 >= 1.7):
+                if (atom_1 in M and atom_2 in Non_M or atom_1 in Non_M and atom_2 in M) and (electro_atom_1 - electro_atom_2 >= 1.7 or electro_atom_2 - electro_atom_1 >= 1.7):
                     print("This is an Ion Bond")
                     sleep(1)
                     print("It occurs between a Metalic atom and a Non Metalic atom")
@@ -157,12 +159,11 @@ while running == True:
                     print("The difference in electronegativity between the two atoms are less than 1.7")
                     sleep(1)
                     print(atom_1 +" = " + electronegativity[atom_1] + ", " + atom_2 + " = " + electronegativity[atom_2])
-                    sleep(2)
+                    sleep(1)
                     if (electro_atom_1 - electro_atom_2 != 0 or electro_atom_2 - electro_atom_1 != 0 ):
                         print("This is a Polar Covalent Bond because both atoms have a difference in electronegativity")
                     elif (electro_atom_1 - electro_atom_2 == 0 or electro_atom_2 - electro_atom_1 == 0 ):
                         print("This is a Non-Polar Covalent Bond because both atoms have the no difference in electronegativity")
-                    print(atom_1 +" = " + electronegativity[atom_1] + ", " + atom_2 + " = " + electronegativity[atom_2])
                 elif atom_1 in M and atom_2 in M:
                     print("This is a Metalic Bond")
                     sleep(1)
@@ -174,8 +175,6 @@ while running == True:
                     sleep(1)
                     print("The metal is held together by strong forces of attraction between delocalized electrons and positive ions")
                     sleep(1)
-                elif atom_1 or atom_2 == "home" or "back":
-                    break
                 else:
                     print("Invalid atom or electronegativity conditions don't meet")
 
