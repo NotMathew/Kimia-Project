@@ -157,6 +157,12 @@ while running == True:
                     print("The difference in electronegativity between the two atoms are less than 1.7")
                     sleep(1)
                     print(atom_1 +" = " + electronegativity[atom_1] + ", " + atom_2 + " = " + electronegativity[atom_2])
+                    sleep(2)
+                    if (electro_atom_1 - electro_atom_2 != 0 or electro_atom_2 - electro_atom_1 != 0 ):
+                        print("This is a Polar Covalent Bond because both atoms have a difference in electronegativity")
+                    elif (electro_atom_1 - electro_atom_2 == 0 or electro_atom_2 - electro_atom_1 == 0 ):
+                        print("This is a Non-Polar Covalent Bond because both atoms have the no difference in electronegativity")
+                    print(atom_1 +" = " + electronegativity[atom_1] + ", " + atom_2 + " = " + electronegativity[atom_2])
                 elif atom_1 in M and atom_2 in M:
                     print("This is a Metalic Bond")
                     sleep(1)
@@ -167,6 +173,7 @@ while running == True:
                     print("This bond involves the sharing of electrons between many metalic atoms")
                     sleep(1)
                     print("The metal is held together by strong forces of attraction between delocalized electrons and positive ions")
+                    sleep(1)
                 elif atom_1 or atom_2 == "home" or "back":
                     break
                 else:
@@ -181,8 +188,6 @@ while running == True:
         sleep(1)
         slow_typing("~Nathan, Mathew and Wilbert")
         exit()
-    elif user_input == ("version"):
-            print("0.1V")
     else:
         print("")
         print("Invalid Input...")
