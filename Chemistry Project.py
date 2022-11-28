@@ -54,7 +54,7 @@ print("Hello and welcome to the simple element Dictionary or Simulation")
 sleep(1)
 while running == True:
     print("Dictionary or Simulation?")
-    user_input = input("").lower()
+    user_input = input("").lower().strip()
     if user_input == "dictionary":
         dictionary_running = True
 
@@ -72,7 +72,7 @@ while running == True:
         print("                                     18. Col_VIIIB10")
         while dictionary_running == True:
             print("Type a number to explore the dictionary of element columns")
-            user_input = input().lower()
+            user_input = input().lower().strip()
             if user_input == ("1"):
                 print(Col_IA)
             elif user_input == ("2"):
@@ -122,8 +122,8 @@ while running == True:
             sleep(1)
             print("Insert 2 atoms from column IA - VIIIA or IB - VIIIB10")
             sleep(1)
-            atom_1 = input("1st Atom = ")
-            atom_2 = input("2nd Atom = ")
+            atom_1 = input("1st Atom = ").strip()
+            atom_2 = input("2nd Atom = ").strip()
             if atom_1 and atom_2 == "home":
                 break
             electro_atom_1 = electronegativity[atom_1]
@@ -147,6 +147,9 @@ while running == True:
                     print("The difference in electronegativity between the two atoms are more or equal to 1.7")
                     sleep(1)
                     print(atom_1 +" = " + electronegativity[atom_1] + ", " + atom_2 + " = " + electronegativity[atom_2])
+                    sleep(1)
+                    print("A molecule example of an ionic bond would be Li2O: lithium oxide")
+                    sleep(1)
                 elif atom_1 in Non_M and atom_2 in Non_M and (electro_atom_1 - electro_atom_2 < 1.7 or electro_atom_2 - electro_atom_1 < 1.7):
                     print("This is a Covalent Bond")
                     sleep(1)
@@ -164,6 +167,9 @@ while running == True:
                         print("This is a Polar Covalent Bond because both atoms have a difference in electronegativity")
                     elif (electro_atom_1 - electro_atom_2 == 0 or electro_atom_2 - electro_atom_1 == 0 ):
                         print("This is a Non-Polar Covalent Bond because both atoms have the no difference in electronegativity")
+                    sleep(1)
+                    print("A molecule example of a covalent bond would be H2O: hydrogen oxide")
+                    sleep(1)
                 elif atom_1 in M and atom_2 in M:
                     print("This is a Metalic Bond")
                     sleep(1)
