@@ -10,4 +10,4 @@ sudo python -m pip install -r requirements.txt
 python Chemistry Project.py
 ```
 ### Windows 10/11
-Go to [Releases](https://github.com/NotMathew/Kimia-Project/releases) and download the lastest version
+Go to [Releases](https://github.com/NotMathew/Kimia-Project/releases) and download the lastest version.
