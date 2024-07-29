@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['Chemistry Project.py'],
+    ['Chemistry-Project.py'],
     pathex=[],
     binaries=[],
     datas=[],
